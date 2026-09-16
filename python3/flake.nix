@@ -31,7 +31,7 @@
 
             shellHook = ''
               echo "Python shell loaded!"
-              
+
               # Create virtual environment if it doesn't exist
               if [ ! -d ".venv" ]; then
                 echo "Creating new virtual environment..."
@@ -46,7 +46,7 @@
               # Install packages if requirements.txt exists
               if [ -f "requirements.txt" ]; then
                 echo "Installing requirements..."
-                pip install -r requirements.txt
+                pip install -q -r requirements.txt
               else
                 echo "Creating default requirements.txt..."
                 touch requirements.txt

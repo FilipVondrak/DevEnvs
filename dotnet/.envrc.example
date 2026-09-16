@@ -1,0 +1,2 @@
+dotenv    # load env variables from .env
+use flake # activate nix dev-shell

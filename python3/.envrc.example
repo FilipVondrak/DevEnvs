@@ -1,0 +1,3 @@
+dotenv                      # load env variables from .env
+watch_list requirements.txt # automatically download library on change
+use flake                   # activate nix dev-shell
